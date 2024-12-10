@@ -3,7 +3,8 @@
 import React, { useEffect, useState } from 'react'
 import CitiesModal from './CitiesModal'
 import Arrow from '../components/Arrow'
-import citiesData from '../components/citiesData'
+import axios from 'axios'
+// import citiesData from '../components/data/citiesData'
 
 const SkeletonCard = () => {
   return (
@@ -20,12 +21,18 @@ const CitiesCards = () => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    setLoading(true)
-    setTimeout(() => {
-      setCities(citiesData)
-      setAllCities(citiesData)
-      setLoading(false)
-    }, 1000)
+    const apiURL = 'https://mayapan-api-sm.vercel.app/cities'
+    axios
+      .get(apiURL)
+      .then((response) => {
+        setCities(response.data)
+        setAllCities(response.data)
+        setLoading(false)
+      })
+      .catch((error) => {
+        console.error('Error fetching data from API: ', error)
+        setLoading(false)
+      })
   }, [])
 
   const filterType = (country) => {

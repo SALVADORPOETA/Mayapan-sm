@@ -1,13 +1,14 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import homeData from './homeData'
 import HomeText from './HomeText'
 import MayapanTextP2 from './MayapanTextP2'
 import MayapanMeaning from './MayapanMeaning'
 import MayapanTextSection from './MayapanTextSection'
 import MayapanImage from './MayapanImage'
 import Arrow from './Arrow'
+import axios from 'axios'
+// import homeData from './data/homeData'
 
 const SkeletonSection = () => {
   return (
@@ -22,11 +23,17 @@ const HomeContainer = () => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    setLoading(true)
-    setTimeout(() => {
-      setHome(homeData)
-      setLoading(false)
-    }, 1000)
+    const apiURL = 'https://mayapan-api-sm.vercel.app/home'
+    axios
+      .get(apiURL)
+      .then((response) => {
+        setHome(response.data)
+        setLoading(false)
+      })
+      .catch((error) => {
+        console.error('Error fetching data from API: ', error)
+        setLoading(false)
+      })
   }, [])
 
   return (

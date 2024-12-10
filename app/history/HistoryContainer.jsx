@@ -3,11 +3,12 @@
 import { useSearchParams } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 import MayapanTextSection from '../components/MayapanTextSection'
-import historyData from '../components/historyData'
 import HistoryText from './HistoryText'
 import MayapanImage from '../components/MayapanImage'
 import MayapanTextP2 from '../components/MayapanTextP2'
 import Arrow from '../components/Arrow'
+import axios from 'axios'
+// import historyData from '../components/data/historyData'
 
 const SkeletonSection = () => {
   return (
@@ -36,11 +37,17 @@ const HistoryContainer = () => {
   }, [scrollToId, history])
 
   useEffect(() => {
-    setLoading(true)
-    setTimeout(() => {
-      setHistory(historyData)
-      setLoading(false)
-    }, 1000)
+    const apiURL = 'https://mayapan-api-sm.vercel.app/history'
+    axios
+      .get(apiURL)
+      .then((response) => {
+        setHistory(response.data)
+        setLoading(false)
+      })
+      .catch((error) => {
+        console.error('Error fetching data from API: ', error)
+        setLoading(false)
+      })
   }, [])
 
   return (
