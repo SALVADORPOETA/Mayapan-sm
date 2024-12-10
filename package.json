@@ -23,5 +23,10 @@
     "eslint-config-next": "15.0.3",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.14"
+  },
+  "overrides": {
+    "react-google-button": {
+      "react": "^19.0.0"
+    }
   }
 }
