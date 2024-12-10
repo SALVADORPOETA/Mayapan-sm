@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #40e0d0;
+}
+
+body {
+  background-color: var(--background);
+}
+
+button {
+  @apply rounded-3xl bg-gradient-to-b from-Terracotta to-Goldenrod text-Beige font-cinzel hover:scale-105 ease-in-out duration-300 focus:outline-none;
+}
