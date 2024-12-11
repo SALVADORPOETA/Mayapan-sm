@@ -82,7 +82,7 @@ const CitiesCards = () => {
                 Honduras
               </button>
               <button
-                className="m-1 px-3 py-1"
+                className="m-1 px-3 py-3"
                 onClick={() => filterType('El Salvador')}
               >
                 El Salvador
