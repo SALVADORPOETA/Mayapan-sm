@@ -142,7 +142,7 @@ const Navbar = () => {
           <div
             className={
               nav
-                ? 'md:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen text-center ease-in-out duration-300 bg-Jungle/90'
+                ? 'md:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen text-center ease-in-out duration-300 bg-Jungle/95'
                 : 'md:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen text-center ease-in-out duration-300 bg-Jungle'
             }
           >
