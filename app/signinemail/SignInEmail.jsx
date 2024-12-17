@@ -1,10 +1,28 @@
 'use client'
 
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
+import { UserAuth } from '../context/AuthContext'
 
 const SignInEmail = () => {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
   const [error, setError] = useState('')
+  const router = useRouter()
+  const { signIn } = UserAuth()
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setError('')
+    try {
+      await signIn(email, password, error)
+      router.push('/account')
+    } catch (e) {
+      setError(e.message)
+      console.log(e.message)
+    }
+  }
 
   return (
     <div className="h-[82vh] mt-[120px] mb-12 md:mb-6 lg:mb-4 xl:mb-0">
@@ -23,12 +41,13 @@ const SignInEmail = () => {
             </Link>
           </p>
         </div>
-        <form className="pb-12 px-8 md:px-16 lg:px-32">
+        <form className="pb-12 px-8 md:px-16 lg:px-32" onSubmit={handleSubmit}>
           <div className="flex flex-col py-2">
             <label className="py-2 font-medium pl-8">Email</label>
             <input
               type="email"
               className="border border-Beige bg-slate-200 rounded-3xl shadow-lg p-3 w-full focus:outline-none text-Goldenrod caret-inherit"
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="flex flex-col py-2">
@@ -36,6 +55,7 @@ const SignInEmail = () => {
             <input
               type="password"
               className="border border-Beige bg-slate-200 rounded-3xl shadow-lg p-3 w-full focus:outline-none text-Goldenrod caret-inherit"
+              onChange={(e) => setPassword(e.target.value)}
             />
           </div>
           {error && (
