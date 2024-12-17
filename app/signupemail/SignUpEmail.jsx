@@ -2,9 +2,27 @@
 
 import Link from 'next/link'
 import React, { useState } from 'react'
+import { UserAuth } from '../context/AuthContext'
+import { useRouter } from 'next/router'
 
 const SignUpEmail = () => {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
   const [error, setError] = useState('')
+  const { createUser } = UserAuth()
+  const router = useRouter()
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setError('')
+    try {
+      await createUser(email, password, error)
+      router.push('/accout')
+    } catch (e) {
+      setError(e.message)
+      console.log(e.message)
+    }
+  }
 
   return (
     <div className="h-[82vh] mt-[120px] mb-20 md:mb-6 lg:mb-4 xl:mb-0">
@@ -23,12 +41,13 @@ const SignUpEmail = () => {
             </Link>
           </p>
         </div>
-        <form className="pb-12 px-8 md:px-16 lg:px-32">
+        <form onSubmit={handleSubmit} className="pb-12 px-8 md:px-16 lg:px-32">
           <div className="flex flex-col py-2">
             <label className="py-2 pl-8">Add an Email Address</label>
             <input
               type="email"
               className="border border-Beige bg-slate-200 text-Terracotta caret-inherit rounded-3xl p-3 focus:outline-none"
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="flex flex-col py-2">
@@ -38,6 +57,7 @@ const SignUpEmail = () => {
             <input
               type="password"
               className="border border-Beige bg-slate-200 text-Terracotta caret-inherit rounded-3xl p-3 focus:outline-none"
+              onChange={(e) => setPassword(e.target.value)}
             />
           </div>
           {error && (
