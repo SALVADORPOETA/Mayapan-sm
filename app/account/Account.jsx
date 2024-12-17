@@ -37,7 +37,7 @@ const Account = () => {
             </div>
           </div>
         ) : (
-          <div className="text-center text-3xl font-bold py-4">
+          <div className="text-center text-3xl font-bold py-16">
             <p>Welcome, {user && user.email}</p>
           </div>
         )}
