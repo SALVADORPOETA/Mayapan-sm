@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { UserAuth } from '../context/AuthContext'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 
 const SignUpEmail = () => {
   const [email, setEmail] = useState('')
