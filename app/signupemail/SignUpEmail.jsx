@@ -17,7 +17,7 @@ const SignUpEmail = () => {
     setError('')
     try {
       await createUser(email, password, error)
-      router.push('/accout')
+      router.push('/account')
     } catch (e) {
       setError(e.message)
       console.log(e.message)
