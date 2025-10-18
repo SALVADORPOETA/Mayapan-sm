@@ -37,11 +37,12 @@ const HistoryContainer = () => {
   }, [scrollToId, history])
 
   useEffect(() => {
-    const apiURL = 'https://mayapan-api-sm.vercel.app/history'
+    const apiURL = 'https://apis-repository-sm.vercel.app/api/mayapan/history'
     axios
       .get(apiURL)
       .then((response) => {
-        setHistory(response.data)
+        const sorted = response.data.sort((a, b) => a.idNum - b.idNum)
+        setHistory(sorted)
         setLoading(false)
       })
       .catch((error) => {
@@ -57,13 +58,13 @@ const HistoryContainer = () => {
             .fill(0)
             .map((_, index) => <SkeletonSection key={index} />)
         : history.map((item) => (
-            <div key={item.id.toString()}>
+            <div key={item.idNum}>
               <div
-                key={item.id}
-                id={item.id.toString()}
+                key={item.idNum}
+                id={item.idNum}
                 className="grid grid-cols-1 md:grid-cols-12 px-4 md:px-8 md:pt-8 md:pb-16 lg:px-0 lg:py-0 my-8 bg-Jungle border border-Beige rounded-lg"
               >
-                {item.id % 2 !== 0 ? (
+                {item.idNum % 2 !== 0 ? (
                   <>
                     <div className="hidden md:flex lg:hidden col-span-12 md:bg-Goldenrod md:rounded-t-lg md:border-t md:border-x lg:border-0 lg:bg-Jungle">
                       <MayapanTextSection section={item.section} />
@@ -72,7 +73,7 @@ const HistoryContainer = () => {
                       <div className="pt-8 pb-16 grid grid-cols-1 md:grid-cols-12 md:p-0 lg:p-8 md:col-span-12 md:bg-Goldenrod lg:bg-Jungle md:border-x lg:border-0 lg:rounded-lg">
                         <div className="flex mb-8 md:mb-0 md:items-end md:col-span-7 lg:mb-auto lg:col-span-8 lg:mr-8 rounded-lg bg-Goldenrod md:rounded-none lg:rounded-lg border md:border-0 lg:border">
                           <HistoryText
-                            id={item.id}
+                            id={item.idNum}
                             section={item.section}
                             p1={item.p1}
                             p2={item.p2}
@@ -108,8 +109,8 @@ const HistoryContainer = () => {
                       </div>
                       <div className="mb-8 md:mb-0 md:col-span-7 lg:mb-auto lg:col-span-8 bg-Goldenrod border md:border-0 lg:border rounded-lg lg:ml-8">
                         <HistoryText
-                          key={item.id}
-                          id={item.id}
+                          key={item.idNum}
+                          id={item.idNum}
                           section={item.section}
                           p1={item.p1}
                           p2={item.p2}

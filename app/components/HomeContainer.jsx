@@ -23,11 +23,12 @@ const HomeContainer = () => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const apiURL = 'https://mayapan-api-sm.vercel.app/home'
+    const apiURL = 'https://apis-repository-sm.vercel.app/api/mayapan/home'
     axios
       .get(apiURL)
       .then((response) => {
-        setHome(response.data)
+        const sorted = response.data.sort((a, b) => a.idNum - b.idNum)
+        setHome(sorted)
         setLoading(false)
       })
       .catch((error) => {
@@ -43,13 +44,13 @@ const HomeContainer = () => {
             .fill(0)
             .map((_, index) => <SkeletonSection key={index} />)
         : home.map((item) => (
-            <div key={item.id}>
+            <div key={item.idNum}>
               <div
-                key={item.id}
-                id={item.id}
+                key={item.idNum}
+                id={item.idNum}
                 className="grid grid-cols-1 md:grid-cols-12 px-4 md:px-8 md:pt-8 md:pb-8 lg:px-0 lg:py-0 my-8 rounded-lg bg-Jungle border border-Beige"
               >
-                {item.id % 2 !== 0 ? (
+                {item.idNum % 2 !== 0 ? (
                   <>
                     <div className="hidden md:flex lg:hidden col-span-12 md:bg-Goldenrod md:border-t md:border-x md:border-Beige md:rounded-t-lg">
                       <MayapanTextSection section={item.section} />
@@ -57,12 +58,12 @@ const HomeContainer = () => {
                     <>
                       <div
                         className={`pt-8 pb-16 grid grid-cols-1 md:grid-cols-12 md:p-0 md:bg-Goldenrod md:border-x lg:border-x-0 lg:px-8 lg:pt-8 lg:bg-Jungle lg:rounded-lg ${
-                          item.id === 1 ? 'lg:pb-0' : 'lg:pb-8'
+                          item.idNum === 1 ? 'lg:pb-0' : 'lg:pb-8'
                         } md:col-span-12`}
                       >
                         <div className="flex mb-8 md:items-end md:col-span-7 md:mb-0 lg:mb-auto lg:col-span-8 lg:mr-8 bg-Goldenrod rounded-lg md:rounded-none border lg:rounded-lg md:border-0 lg:border">
                           <HomeText
-                            id={item.id}
+                            id={item.idNum}
                             section={item.section}
                             p1={item.p1}
                             p2={item.p2}
@@ -81,7 +82,7 @@ const HomeContainer = () => {
                         <MayapanTextP2 p2={item.p2} />
                       </div>
                     </>
-                    {item.id === 1 ? (
+                    {item.idNum === 1 ? (
                       <div className="hidden md:grid col-span-12 justify-center items-center md:mt-4 lg:mt-0 mb-8 md:mb-2">
                         <MayapanMeaning />
                       </div>
@@ -103,8 +104,8 @@ const HomeContainer = () => {
                       </div>
                       <div className="mb-8 md:col-span-7 md:mb-0 lg:mb-auto lg:col-span-8 bg-Goldenrod rounded-lg md:rounded-none lg:rounded-lg border md:border-0 lg:border lg:ml-8">
                         <HomeText
-                          key={item.id}
-                          id={item.id}
+                          key={item.idNum}
+                          id={item.idNum}
                           section={item.section}
                           p1={item.p1}
                           p2={item.p2}

@@ -25,8 +25,9 @@ const CitiesCards = () => {
     axios
       .get(apiURL)
       .then((response) => {
-        setCities(response.data)
-        setAllCities(response.data)
+        const sorted = response.data.sort((a, b) => a.idNum - b.idNum)
+        setCities(sorted)
+        setAllCities(sorted)
         setLoading(false)
       })
       .catch((error) => {
