@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react'
 import CitiesModal from './CitiesModal'
 import Arrow from '../components/Arrow'
 import axios from 'axios'
-// import citiesData from '../components/data/citiesData'
 
 const SkeletonCard = () => {
   return (

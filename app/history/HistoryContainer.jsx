@@ -8,7 +8,6 @@ import MayapanImage from '../components/MayapanImage'
 import MayapanTextP2 from '../components/MayapanTextP2'
 import Arrow from '../components/Arrow'
 import axios from 'axios'
-// import historyData from '../components/data/historyData'
 
 const SkeletonSection = () => {
   return (

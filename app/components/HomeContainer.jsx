@@ -8,7 +8,6 @@ import MayapanTextSection from './MayapanTextSection'
 import MayapanImage from './MayapanImage'
 import Arrow from './Arrow'
 import axios from 'axios'
-// import homeData from './data/homeData'
 
 const SkeletonSection = () => {
   return (
