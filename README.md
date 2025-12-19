@@ -34,12 +34,6 @@ This website is completely interactive, so you can click on any image and get to
 
 ---
 
-## 🖥️ Demo
-
-You can view a live demo of the project [here](https://mayapan-sm.vercel.app/).
-
----
-
 ## 💻 Installation
 
 1. Clone the repository:
