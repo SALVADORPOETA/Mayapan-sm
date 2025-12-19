@@ -1,12 +1,5 @@
 # Mayapan
 
-[![GitHub](https://img.shields.io/badge/-GitHub-333333?style=flat&logo=github)](https://github.com/SALVADORPOETA/Mayapan-sm)
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-333333?style=flat&logo=linkedin)](https://www.linkedin.com/in/salvador-martinez-sm/)
-[![Next.js](https://img.shields.io/badge/Next.js-15-000000?style=flat&logo=next.js&logoColor=white)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-18-61DAFB?style=flat&logo=react&logoColor=black)](https://reactjs.org/)
-[![TailwindCSS](https://img.shields.io/badge/Tailwind-3-06B6D4?style=flat&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![Firebase](https://img.shields.io/badge/Firebase-Auth-FFCA28?style=flat&logo=firebase&logoColor=black)](https://firebase.google.com/)
-
 A **completely original Next.js project** exploring the rich history of the Maya culture. Every component, page, and feature in this project has been designed and implemented from scratch, showcasing interactive content, image modals, sliders, and user authentication using Firebase.
 
 This website is completely interactive, so you can click on any image and get to see a window with iformation about it. All the buttons have a function as well, like the ones in the "Cities" section where you can filter by country. You can sign up using your Google account or with an email and password (since this is a personal project I don't require verification, so you can invent any email and password that you want), then you can sign in with your chosen method to access the protected route of your Account page.
