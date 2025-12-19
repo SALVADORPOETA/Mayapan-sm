@@ -1,8 +1,5 @@
 # Mayapan
 
-
-# 🌄 Mayapan
-
 [![GitHub](https://img.shields.io/badge/-GitHub-333333?style=flat&logo=github)](https://github.com/SALVADORPOETA/Mayapan-sm)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-333333?style=flat&logo=linkedin)](https://www.linkedin.com/in/salvador-martinez-sm/)
 [![Next.js](https://img.shields.io/badge/Next.js-15-000000?style=flat&logo=next.js&logoColor=white)](https://nextjs.org/)
