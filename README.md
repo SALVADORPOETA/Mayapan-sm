@@ -8,7 +8,7 @@ This website is **completely interactive** — you can click on any image to see
 
 ---
 
-## 📝 Overview
+## ✨ Overview
 
 Mayapan is not a template, clone, or tutorial follow-along project.
 
