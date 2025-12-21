@@ -71,7 +71,7 @@ const CitiesModal = ({ image, name, description, country }) => {
       <div className="flex justify-between px-4 py-6 bg-Goldenrod rounded-b-lg border-t border-Beige">
         <p className="font-bold text-Beige">{name}</p>
         <p>
-          <span className="bg-Jungle border border-Beige text-Goldenrod px-4 py-2 rounded-full text-sm md:text-base">
+          <span className="bg-Jungle border border-Beige text-Goldenrod px-4 py-2 rounded-full text-[7px] sm:text-sm md:text-base">
             {country}
           </span>
         </p>
