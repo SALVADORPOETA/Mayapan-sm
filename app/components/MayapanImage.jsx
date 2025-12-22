@@ -76,7 +76,7 @@ const MayapanImage = ({ image, title, description, className }) => {
                 <Image
                   src={image}
                   alt={title}
-                  width={300}
+                  width={250}
                   height={250}
                   onClick={handleImageClick2}
                   className={
