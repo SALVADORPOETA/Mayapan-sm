@@ -81,7 +81,7 @@ const CitiesModal = ({ image, name, description, country }) => {
           <div className="fixed inset-0 flex items-center justify-center bg-gray-900/60 z-50">
             <div
               ref={modalRef1}
-              className="bg-Terracotta p-5 rounded-xl shadow-lg max-w-[500px] max-h-full border"
+              className="bg-Terracotta p-5 rounded-xl shadow-lg max-w-[500px] border"
             >
               <div className="grid grid-cols-1 md:grid-cols-2 mb-4">
                 <div className="col-span-1 flex justify-center items-center p-2">
