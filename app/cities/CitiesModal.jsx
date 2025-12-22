@@ -89,7 +89,7 @@ const CitiesModal = ({ image, name, description, country }) => {
                     src={image}
                     alt={name}
                     width={250}
-                    height={250}
+                    height={200}
                     onClick={handleImageClick2}
                     className={`border mx-auto my-4 rounded-[20%] hover:scale-105 ease-in-out duration-300 cursor-pointer`}
                   />
