@@ -66,7 +66,7 @@ const MayapanImage = ({ image, title, description, className }) => {
         className={`rounded-lg hover:scale-105 ease-in-out duration-500 cursor-pointer h-full w-full md:max-h-[250px] lg:max-h-[350px] bg-Beige ${className}`}
       />
       {isModalOpen1 && (
-        <div className="fixed inset-0 top-[90px] flex items-center justify-center bg-gray-900 bg-opacity-50">
+        <div className="fixed inset-0 flex items-center justify-center bg-gray-900/60 z-50">
           <div
             ref={modalRef1}
             className="bg-Terracotta border p-5 rounded-xl shadow-lg max-w-[500px]"

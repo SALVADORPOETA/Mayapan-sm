@@ -78,7 +78,7 @@ const CitiesModal = ({ image, name, description, country }) => {
       </div>
       {isModalOpen1 &&
         createPortal(
-          <div className="fixed inset-0 top-[90px] flex items-center justify-center bg-gray-900 bg-opacity-50">
+          <div className="fixed inset-0 flex items-center justify-center bg-gray-900/60 z-50">
             <div
               ref={modalRef1}
               className="bg-Terracotta p-5 rounded-xl shadow-lg max-w-[500px] border"
