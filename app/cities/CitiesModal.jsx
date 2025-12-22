@@ -83,7 +83,7 @@ const CitiesModal = ({ image, name, description, country }) => {
               ref={modalRef1}
               className="bg-Terracotta p-5 rounded-xl shadow-lg max-w-[500px] border"
             >
-              <div className="grid grid-cols-2 mb-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 mb-4">
                 <div className="col-span-1 flex justify-center items-center p-2">
                   <Image
                     src={image}
