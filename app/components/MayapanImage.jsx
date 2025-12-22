@@ -77,7 +77,7 @@ const MayapanImage = ({ image, title, description, className }) => {
                   src={image}
                   alt={title}
                   width={300}
-                  height={300}
+                  height={250}
                   onClick={handleImageClick2}
                   className={
                     'mx-auto my-4 rounded-[20%] hover:scale-105 ease-in-out duration-300 cursor-pointer border'
