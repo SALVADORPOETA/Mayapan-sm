@@ -81,7 +81,7 @@ const CitiesModal = ({ image, name, description, country }) => {
           <div className="fixed inset-0 flex items-center justify-center bg-gray-900/60 z-50">
             <div
               ref={modalRef1}
-              className="bg-Terracotta p-5 rounded-xl shadow-lg max-w-[500px] border"
+              className="bg-Terracotta p-5 rounded-xl shadow-lg max-w-[500px] max-h-full border"
             >
               <div className="grid grid-cols-1 md:grid-cols-2 mb-4">
                 <div className="col-span-1 flex justify-center items-center p-2">
@@ -94,7 +94,7 @@ const CitiesModal = ({ image, name, description, country }) => {
                     className={`border mx-auto my-4 rounded-[20%] hover:scale-105 ease-in-out duration-300 cursor-pointer`}
                   />
                   {isModalOpen2 && (
-                    <div className="fixed inset-0 top-[90px] flex items-center justify-center bg-gray-900 bg-opacity-50">
+                    <div className="fixed inset-0 flex items-center justify-center bg-gray-900/60 z-50">
                       <div
                         ref={modalRef2}
                         className="bg-Turquoise p-5 shadow-lg max-w-full max-h-full overflow-auto relative"
