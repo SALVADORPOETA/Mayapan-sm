@@ -22,6 +22,14 @@ It is a **custom-designed cultural platform** that combines:
 
 The project emphasizes **interactivity**, **visual storytelling**, and **production-ready architecture**.
 
+<img width="765" height="633" alt="bharat-home" src="https://github.com/user-attachments/assets/a92a620d-e301-47cf-aa0d-7ca16bfad27f" />
+
+<img width="765" height="633" alt="bharat-history" src="https://github.com/user-attachments/assets/decbb5a5-59aa-4a9b-9fc0-bc1f728223b8" />
+
+<img width="767" height="631" alt="bharat-cities" src="https://github.com/user-attachments/assets/b456a86c-b56a-49d8-9e8a-35fc96e99768" />
+
+<img width="765" height="631" alt="bharat-cities-1" src="https://github.com/user-attachments/assets/34c4ea42-7a38-4391-9cbe-9d4a3eb4b06d" />
+
 ---
 
 ## 🚀 Features
