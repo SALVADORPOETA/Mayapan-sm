@@ -22,13 +22,13 @@ It is a **custom-designed cultural platform** that combines:
 
 The project emphasizes **interactivity**, **visual storytelling**, and **production-ready architecture**.
 
-<img width="765" height="633" alt="bharat-home" src="https://github.com/user-attachments/assets/a92a620d-e301-47cf-aa0d-7ca16bfad27f" />
+<img width="765" height="633" alt="mayapan-home" src="https://github.com/user-attachments/assets/e521fa52-bace-4f35-be77-d3a4f357c1e8" />
 
-<img width="765" height="633" alt="bharat-history" src="https://github.com/user-attachments/assets/decbb5a5-59aa-4a9b-9fc0-bc1f728223b8" />
+<img width="765" height="633" alt="mayapan-history" src="https://github.com/user-attachments/assets/3d3c7e61-40b1-43fe-969f-24187939a073" />
 
-<img width="767" height="631" alt="bharat-cities" src="https://github.com/user-attachments/assets/b456a86c-b56a-49d8-9e8a-35fc96e99768" />
+<img width="767" height="631" alt="mayapan-cities" src="https://github.com/user-attachments/assets/d16d48c8-5803-4ebe-9602-0fae547392ec" />
 
-<img width="765" height="631" alt="bharat-cities-1" src="https://github.com/user-attachments/assets/34c4ea42-7a38-4391-9cbe-9d4a3eb4b06d" />
+<img width="765" height="631" alt="mayapan-cities-1" src="https://github.com/user-attachments/assets/2a1e74d0-df28-41e1-87d5-c84b8b94d1b9" />
 
 ---
 
