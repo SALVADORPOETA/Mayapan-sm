@@ -30,7 +30,6 @@ The project emphasizes **interactivity**, **visual storytelling**, and **product
 This page serves as a comprehensive introduction to the Maya civilization, organized through a dynamic data architecture that segments information into key pillars like politics, economy, and religion. A standout feature is the "Content" navigation panel (exclusive to large screens and above), which acts as a strategic index. This panel allows users to jump directly to specific historical milestones, creating an interactive bridge between the general overview and the detailed chronological data.
 
 <img width="765" height="633" alt="mayapan-home" src="https://github.com/user-attachments/assets/e521fa52-bace-4f35-be77-d3a4f357c1e8" />
-
 ## &nbsp;
 
 ### History Page
