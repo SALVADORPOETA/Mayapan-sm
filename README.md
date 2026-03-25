@@ -31,7 +31,7 @@ This page serves as a comprehensive introduction to the Maya civilization, organ
 
 <img width="765" height="633" alt="mayapan-home" src="https://github.com/user-attachments/assets/e521fa52-bace-4f35-be77-d3a4f357c1e8" />
 
---
+---
 
 ### History Page
 
