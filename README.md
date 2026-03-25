@@ -45,6 +45,8 @@ This section offers an interactive atlas of Maya urban centers across five moder
 
 ### Cities Modal
 
+This component acts as an immersive detail overlay for each Maya city, utilizing React Portals to render content at the top level of the DOM. This architectural choice prevents CSS clipping and z-index issues within the grid layout. It features a nested modal system that allows users to toggle between a descriptive information view and a high-resolution, full-screen image gallery, ensuring a deep dive into the archaeological and geographic specifics of each site.
+
 <img width="765" height="631" alt="mayapan-cities-1" src="https://github.com/user-attachments/assets/2a1e74d0-df28-41e1-87d5-c84b8b94d1b9" />
 
 ---
