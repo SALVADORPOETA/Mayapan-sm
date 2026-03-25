@@ -31,22 +31,17 @@ This page serves as a comprehensive introduction to the Maya civilization, organ
 
 <img width="765" height="633" alt="mayapan-home" src="https://github.com/user-attachments/assets/e521fa52-bace-4f35-be77-d3a4f357c1e8" />
 
-## &nbsp;
 ### History Page
 
 Designed as an evolutionary timeline, this section manages precise user "landing" through advanced DOM manipulation and useSearchParams. When a user clicks a link from the Home's content panel, the page executes a programmatic smooth scroll with a calculated offset. This ensures that the destination header is not obscured by the fixed Navbar, providing a seamless and reactive transition between different historical periods.
 
 <img width="765" height="633" alt="mayapan-history" src="https://github.com/user-attachments/assets/3d3c7e61-40b1-43fe-969f-24187939a073" />
 
-## &nbsp;
-
 ### Cities
 
 This section offers an interactive atlas of Maya urban centers across five modern countries. Its architecture relies on a dual-state management system that enables instant client-side filtering without additional server requests. It is complemented by a visualization system using React Portals (createPortal), which decouples information modals from the main document flow to ensure a clean interface free from z-index or stacking context conflicts.
 
 <img width="767" height="631" alt="mayapan-cities" src="https://github.com/user-attachments/assets/d16d48c8-5803-4ebe-9602-0fae547392ec" />
-
-## &nbsp;
 
 ### Cities Modal
 
