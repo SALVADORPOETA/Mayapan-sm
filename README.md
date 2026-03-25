@@ -37,7 +37,7 @@ Designed as an evolutionary timeline, this section manages precise user "landing
 
 <img width="765" height="633" alt="mayapan-history" src="https://github.com/user-attachments/assets/3d3c7e61-40b1-43fe-969f-24187939a073" />
 
-### Cities
+### Cities Page
 
 This section offers an interactive atlas of Maya urban centers across five modern countries. Its architecture relies on a dual-state management system that enables instant client-side filtering without additional server requests. It is complemented by a visualization system using React Portals (createPortal), which decouples information modals from the main document flow to ensure a clean interface free from z-index or stacking context conflicts.
 
