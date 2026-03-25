@@ -31,6 +31,8 @@ This page serves as a comprehensive introduction to the Maya civilization, organ
 
 <img width="765" height="633" alt="mayapan-home" src="https://github.com/user-attachments/assets/e521fa52-bace-4f35-be77-d3a4f357c1e8" />
 
+--
+
 ### History Page
 
 Designed as an evolutionary timeline, this section manages precise user "landing" through advanced DOM manipulation and useSearchParams. When a user clicks a link from the Home's content panel, the page executes a programmatic smooth scroll with a calculated offset. This ensures that the destination header is not obscured by the fixed Navbar, providing a seamless and reactive transition between different historical periods.
